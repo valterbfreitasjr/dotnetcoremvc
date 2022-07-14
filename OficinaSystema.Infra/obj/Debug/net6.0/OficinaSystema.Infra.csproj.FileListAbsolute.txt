@@ -1,0 +1,15 @@
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.deps.json
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.dll
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.pdb
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.dll
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.pdb
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.AssemblyReference.cache
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfoInputs.cache
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfo.cs
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CoreCompileInputs.cache
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CopyComplete
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.dll
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\refint\OficinaSystema.Infra.dll
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.pdb
+D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\ref\OficinaSystema.Infra.dll
