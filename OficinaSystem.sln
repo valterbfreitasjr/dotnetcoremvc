@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaSystem.API", "OficinaSystem.API\OficinaSystem.API.csproj", "{2D78AC6B-C29F-4C7D-A132-B0D9CD91792F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OficinaSystem.API", "OficinaSystem.API\OficinaSystem.API.csproj", "{2D78AC6B-C29F-4C7D-A132-B0D9CD91792F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaSystem.Domain", "OficinaSystem.Domain\OficinaSystem.Domain.csproj", "{1531FEDC-3D5F-4860-9530-F63836F9B211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OficinaSystem.Domain", "OficinaSystem.Domain\OficinaSystem.Domain.csproj", "{1531FEDC-3D5F-4860-9530-F63836F9B211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaSystema.Infra", "OficinaSystema.Infra\OficinaSystema.Infra.csproj", "{0AA850C0-0164-4345-9147-C4D2C514E0E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OficinaSystema.Infra", "OficinaSystema.Infra\OficinaSystema.Infra.csproj", "{0AA850C0-0164-4345-9147-C4D2C514E0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OficinaSystem.Front", "OficinaSystem.Front\OficinaSystem.Front.csproj", "{C22D961F-6740-4302-84C4-22B299F46BA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Front", "01 - Front", "{23A572CB-DD91-469F-BAD2-3BEBC585DF02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{0AA850C0-0164-4345-9147-C4D2C514E0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA850C0-0164-4345-9147-C4D2C514E0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AA850C0-0164-4345-9147-C4D2C514E0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22D961F-6740-4302-84C4-22B299F46BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22D961F-6740-4302-84C4-22B299F46BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22D961F-6740-4302-84C4-22B299F46BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22D961F-6740-4302-84C4-22B299F46BA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C22D961F-6740-4302-84C4-22B299F46BA5} = {23A572CB-DD91-469F-BAD2-3BEBC585DF02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4F31B73-581B-47A7-AD73-359C42D8D066}

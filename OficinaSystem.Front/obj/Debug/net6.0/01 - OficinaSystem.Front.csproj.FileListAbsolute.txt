@@ -1,0 +1,26 @@
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\appsettings.Development.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\appsettings.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.staticwebassets.runtime.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.exe
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.deps.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.runtimeconfig.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.dll
+E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\01 - OficinaSystem.Front.pdb
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.csproj.AssemblyReference.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.AssemblyInfoInputs.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.AssemblyInfo.cs
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.csproj.CoreCompileInputs.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.MvcApplicationPartsAssemblyInfo.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.RazorAssemblyInfo.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.RazorAssemblyInfo.cs
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\staticwebassets.build.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\staticwebassets.development.json
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\bundle\01 - OficinaSystem.Front.styles.css
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\projectbundle\01 - OficinaSystem.Front.bundle.scp.css
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.dll
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\refint\01 - OficinaSystem.Front.dll
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.pdb
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\01 - OficinaSystem.Front.genruntimeconfig.cache
+E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\ref\01 - OficinaSystem.Front.dll
