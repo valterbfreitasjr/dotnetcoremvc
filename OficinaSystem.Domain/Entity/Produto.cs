@@ -13,15 +13,15 @@
 
         }
 
-        public Produto(int id, decimal preco, string descricao)
+        public void SetarDadosIniciais(decimal preco, string descricao)
         {
-            Id = id;
             Preco = preco;
             Descricao = descricao;
         }
 
-        public void SetarDadosIniciais(decimal preco, string descricao)
+        public Produto(int id, decimal preco, string descricao)
         {
+            Id = id;
             Preco = preco;
             Descricao = descricao;
         }

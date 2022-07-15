@@ -7,7 +7,6 @@ namespace OficinaSystema.Infra.Repositories
 {
     public class ProdutoRepositorie : IProdutoRepositorie
     {
-
         private readonly IConnection _connection;
 
         public ProdutoRepositorie(IConnection connection)

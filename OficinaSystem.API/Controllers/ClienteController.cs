@@ -8,19 +8,19 @@ namespace OficinaSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FuncionarioController : ControllerBase
+    public class ClienteController : ControllerBase
     {
-        private readonly IFuncionarioRepositorie _funcionarioRepositorie;
+        private readonly IClienteRepositorie _clienteRepositorie;
 
-        public FuncionarioController(IFuncionarioRepositorie funcionarioRepositorie)
+        public ClienteController(IClienteRepositorie clienteRepositorie)
         {
-            _funcionarioRepositorie = funcionarioRepositorie;
+            _clienteRepositorie = clienteRepositorie;
         }
 
         [HttpPost]
-        public ActionResult Post(FuncionarioViewModel funcionario)
+        public ActionResult Post(ClienteViewModel cliente)
         {
-            var result = _funcionarioRepositorie.Adicionar(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco});
+            var result = _clienteRepositorie.Adicionar(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco});
 
             if (result != null)
                 return Ok(result);
@@ -31,7 +31,7 @@ namespace OficinaSystem.API.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            var result = _funcionarioRepositorie.ObterTodos();
+            var result = _clienteRepositorie.ObterTodos();
 
             if (result.Count > 0)
                 return Ok(result);
@@ -42,7 +42,7 @@ namespace OficinaSystem.API.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-            var result = _funcionarioRepositorie.ObterFuncionario(id);
+            var result = _clienteRepositorie.ObterCliente(id);
 
             if (result != null)
                 return Ok(result);
@@ -51,11 +51,10 @@ namespace OficinaSystem.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public ActionResult Put(int id, FuncionarioViewModel funcionario)
+        public ActionResult Put(int id, ClienteViewModel cliente)
         {
-            var result = _funcionarioRepositorie.EditarFuncionario(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco, Id = id});
+            var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = id});
 
-            //Se 1(true) - 0(false)
             if (result)
                 return Ok();
 
@@ -65,7 +64,7 @@ namespace OficinaSystem.API.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var result = _funcionarioRepositorie.Delete(id);
+            var result = _clienteRepositorie.Delete(id);
 
             if (result)
                 return Ok();
