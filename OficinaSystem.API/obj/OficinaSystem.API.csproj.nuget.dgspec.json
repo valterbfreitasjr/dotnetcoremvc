@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj": {}
+    "E:\\Repo\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj": {}
   },
   "projects": {
-    "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj": {
+    "E:\\Repo\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj",
+        "projectUniqueName": "E:\\Repo\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj",
         "projectName": "OficinaSystem.API",
-        "projectPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj",
-        "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\obj\\",
+        "projectPath": "E:\\Repo\\sistemaoficina\\OficinaSystem.API\\OficinaSystem.API.csproj",
+        "packagesPath": "C:\\Users\\Gustavo Barreto\\.nuget\\packages\\",
+        "outputPath": "E:\\Repo\\sistemaoficina\\OficinaSystem.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustavo Barreto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj": {
-                "projectPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj"
+              "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj": {
+                "projectPath": "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj"
               }
             }
           }
@@ -71,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj": {
+    "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj",
+        "projectUniqueName": "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj",
         "projectName": "OficinaSystem.Domain",
-        "projectPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\obj\\",
+        "projectPath": "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\Gustavo Barreto\\.nuget\\packages\\",
+        "outputPath": "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustavo Barreto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,21 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj": {
+    "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj",
+        "projectUniqueName": "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj",
         "projectName": "OficinaSystema.Infra",
-        "projectPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj",
-        "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\obj\\",
+        "projectPath": "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\OficinaSystema.Infra.csproj",
+        "packagesPath": "C:\\Users\\Gustavo Barreto\\.nuget\\packages\\",
+        "outputPath": "E:\\Repo\\sistemaoficina\\OficinaSystema.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustavo Barreto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,8 +159,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj": {
-                "projectPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj"
+              "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj": {
+                "projectPath": "E:\\Repo\\sistemaoficina\\OficinaSystem.Domain\\OficinaSystem.Domain.csproj"
               }
             }
           }
@@ -199,7 +199,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

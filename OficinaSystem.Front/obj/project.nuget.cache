@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cvsbRSDZk7rcfgTYPdK7bf44hpQKN43d6oulGo6pAJKzWa3zrQDWVbG8nErB+72BxaO+GwySJWnWti0k9EsUOQ==",
+  "success": true,
+  "projectFilePath": "E:\\Repo\\sistemaoficina\\OficinaSystem.Front\\OficinaSystem.Front.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gustavo Barreto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -10,3 +10,15 @@ D:\Users\valte\source\repos\OficinaSystem\OficinaSystem.Domain\obj\Debug\net6.0\
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystem.Domain\obj\Debug\net6.0\refint\OficinaSystem.Domain.dll
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.pdb
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystem.Domain\obj\Debug\net6.0\ref\OficinaSystem.Domain.dll
+E:\Repo\sistemaoficina\OficinaSystem.Domain\bin\Debug\net6.0\OficinaSystem.Domain.deps.json
+E:\Repo\sistemaoficina\OficinaSystem.Domain\bin\Debug\net6.0\OficinaSystem.Domain.dll
+E:\Repo\sistemaoficina\OficinaSystem.Domain\bin\Debug\net6.0\OficinaSystem.Domain.pdb
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.csproj.AssemblyReference.cache
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.AssemblyInfoInputs.cache
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.AssemblyInfo.cs
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.csproj.CoreCompileInputs.cache
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.dll
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\refint\OficinaSystem.Domain.dll
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\OficinaSystem.Domain.pdb
+E:\Repo\sistemaoficina\OficinaSystem.Domain\obj\Debug\net6.0\ref\OficinaSystem.Domain.dll

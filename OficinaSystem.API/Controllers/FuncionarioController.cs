@@ -29,6 +29,7 @@ namespace OficinaSystem.API.Controllers
         }
 
         [HttpGet]
+        [Route("obtertodos")]
         public ActionResult Get()
         {
             var result = _funcionarioRepositorie.ObterTodos();
