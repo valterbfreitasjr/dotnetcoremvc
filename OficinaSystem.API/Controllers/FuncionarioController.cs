@@ -18,6 +18,7 @@ namespace OficinaSystem.API.Controllers
         }
 
         [HttpPost]
+        [Route("adicionar")]
         public ActionResult Post(FuncionarioViewModel funcionario)
         {
             var result = _funcionarioRepositorie.Adicionar(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco});
@@ -58,7 +59,7 @@ namespace OficinaSystem.API.Controllers
 
             //Se 1(true) - 0(false)
             if (result)
-                return Ok();
+                return Ok(1);
 
             return BadRequest();
         }
@@ -69,7 +70,7 @@ namespace OficinaSystem.API.Controllers
             var result = _funcionarioRepositorie.Delete(id);
 
             if (result)
-                return Ok();
+                return Ok(1);
 
             return BadRequest();
         }

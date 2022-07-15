@@ -100,8 +100,15 @@
         </div>
     </aside>
 
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <div class="container-fluid py-4">
+
+
+    <main class="main-content position-relative max-height-vh-150 h-150 border-radius-lg ">
+        <div class="container-fluid py-6">
+            <div class="card mb-2">
+                <div class="card-body">
+                    <button class="btn btn-success text-white" id="btnNovoRegistro"><i class="fa fa-plus pull-right"></i> Novo Registro</a></button>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="card my-4">
@@ -113,7 +120,7 @@
                         <div class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
                             <div class="card-body">
 
-                                <div class="table-responsive">
+                                <div class="table-responsive" id="destroy">
                                     <table class="table table-striped" id="FuncionarioCadastrado">
                                         <thead>
                                             <tr>
@@ -135,9 +142,133 @@
             </div>
         </div>
     </main>
+
+    <div class=" modal fade modal_confirm" id="modalNovoRegistro">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Novo Registro</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="row col-md-6">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="txtNome" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row col-md-4">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">CPF</label>
+                                    <input type="text" class="form-control" id="txtCpf" maxlength="11">
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row col-md-6">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="txtEndereco" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="salvar_registro">Inserir</button>
+                    <button type="button" id="btnVoltar" data-dismiss="modal" class="btn btn-danger"> Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" modal fade modal_confirm" id="modalAlterarRegistro">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Aterar Registro</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="row col-md-3">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">Id</label>
+                                    <input type="text" class="form-control" id="txtId" maxlength="10" readonly>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        <br />
+                        <div class="row col-md-6">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="txtNomeAlt" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row col-md-4">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">CPF</label>
+                                    <input type="text" class="form-control" id="txtCpfAlt" maxlength="11">
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row col-md-6">
+                            <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                <div class="input-group input-group-outline">
+                                    <label class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="txtEnderecoAlt" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="alterar_registro"> Salvar</button>
+                <button type="button" id="btnVoltar" data-dismiss="modal" class="btn btn-danger"> Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class=" modal fade modal_confirm" id="modalConfirmarExclusao">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Excluir Registro</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        A confirmação resultará na exclusão permanente do item.
+                        <br /><br />
+                        Tem certeza que deseja excluir este registro?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="delete_registro">SIM</button>
+                    <button type="button" id="btnVoltar" data-dismiss="modal" class="btn btn-danger">NÃO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!--   Core JS Files   -->
     <script src="../assets/js/core/popper.min.js"></script>
-    <script src="../assets/js/core/bootstrap.min.js"></script>
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script>
