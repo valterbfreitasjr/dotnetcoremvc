@@ -6,5 +6,8 @@ namespace OficinaSystem.Domain.Interfaces
     {
         Funcionario Adicionar(Funcionario funcionario);
         List<Funcionario> ObterTodos();
+        Funcionario ObterFuncionario(int id);
+        bool EditarFuncionario(Funcionario funcionario);
+        bool Delete(int id);
     }
 }

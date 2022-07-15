@@ -1,9 +1,9 @@
-﻿namespace OficinaSystem.Domain.Entity
-{
-    public class Pedido
-    {
-        public int Id { get; set; }
+﻿using OficinaSystem.Domain.Entity;
 
+namespace OficinaSystem.API.ViewModel
+{
+    public class PedidoViewModel
+    {
         public Cliente Cliente { get; set; }
 
         public Funcionario Funcionario { get; set; }

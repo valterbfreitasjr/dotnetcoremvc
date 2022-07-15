@@ -19,9 +19,11 @@ builder.Services.AddScoped(Connect);
 builder.Services.AddScoped(typeof(IConnection), typeof(Connection));
 // Adicionar Repositorio
 builder.Services.AddScoped(typeof(IProdutoRepositorie), typeof(ProdutoRepositorie));
-
 //Retirar e Ler o Erro depois -- NÃO ESQUECER!!!
 builder.Services.AddScoped(typeof(IFuncionarioRepositorie), typeof(FuncionarioRepositorie));
+builder.Services.AddScoped(typeof(IClienteRepositorie), typeof(ClienteRepositorie));
+//builder.Services.AddScoped(typeof(IPedidoRepositorie), typeof(PedidoRepositorie));
+builder.Services.AddScoped(typeof(IServicoRepositorie), typeof(ServicoRepositorie));
 
 var app = builder.Build();
 
