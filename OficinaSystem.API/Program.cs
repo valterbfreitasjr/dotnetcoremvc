@@ -22,8 +22,8 @@ builder.Services.AddScoped(typeof(IProdutoRepositorie), typeof(ProdutoRepositori
 //Retirar e Ler o Erro depois -- NÃO ESQUECER!!!
 builder.Services.AddScoped(typeof(IFuncionarioRepositorie), typeof(FuncionarioRepositorie));
 builder.Services.AddScoped(typeof(IClienteRepositorie), typeof(ClienteRepositorie));
-//builder.Services.AddScoped(typeof(IPedidoRepositorie), typeof(PedidoRepositorie));
 builder.Services.AddScoped(typeof(IServicoRepositorie), typeof(ServicoRepositorie));
+//builder.Services.AddScoped(typeof(IPedidoRepositorie), typeof(PedidoRepositorie));
 
 var app = builder.Build();
 
