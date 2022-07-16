@@ -16,7 +16,7 @@ namespace OficinaSystem.API.Controllers
             _servicoRepositorie = servicoRepositorie;
         }
 
-        [HttpPost]
+        [HttpPost("adicionar")]
         public ActionResult Post(ServicoViewModel servico)
         {
             var result = _servicoRepositorie.Adicionar(new Servico{Preco = servico.Preco, Descricao = servico.Descricao});

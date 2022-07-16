@@ -93,6 +93,25 @@ namespace OficinaSystem.Front.Controllers
                 return Json(result);
             }
         }
+        [Route("remover")]
+        [HttpPost]
+        public async Task<JsonResult> Remover([FromBody] int codigo)
+        {
+            ConfigAPI api = new ConfigAPI();
+            string url = api.UrlAPI + "Funcionario/delete";
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = client.PostAsync(url,
+                new StringContent(JsonConvert.SerializeObject(codigo), Encoding.UTF8, "application/json")).Result;
+
+                string json = response.Content.ReadAsStringAsync().Result;
+                var result = JsonConvert.DeserializeObject<int>(json);
+
+                return Json(result);
+            }
+
+        }
+
 
         public IActionResult Index()
         {

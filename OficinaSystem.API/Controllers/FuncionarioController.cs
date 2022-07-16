@@ -17,8 +17,7 @@ namespace OficinaSystem.API.Controllers
             _funcionarioRepositorie = funcionarioRepositorie;
         }
 
-        [HttpPost]
-        [Route("adicionar")]
+        [HttpPost("adicionar")]
         public ActionResult Post(FuncionarioViewModel funcionario)
         {
             var result = _funcionarioRepositorie.Adicionar(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco});
@@ -29,8 +28,7 @@ namespace OficinaSystem.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet]
-        [Route("obtertodos")]
+        [HttpGet("obtertodos")]
         public ActionResult Get()
         {
             var result = _funcionarioRepositorie.ObterTodos();
@@ -52,8 +50,7 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPost]
-        [Route("alterar")]
+        [HttpPost("alterar")]
         public ActionResult Put(FuncionarioViewModel funcionario)
         {
             var result = _funcionarioRepositorie.EditarFuncionario(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco, Id = funcionario .Id });
@@ -65,8 +62,8 @@ namespace OficinaSystem.API.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        [HttpPost("delete")]
+        public ActionResult Delete([FromBody] int id)
         {
             var result = _funcionarioRepositorie.Delete(id);
 
