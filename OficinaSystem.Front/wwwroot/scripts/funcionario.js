@@ -124,7 +124,7 @@ function AtualizarRegistro() {
         Endereco: endereco
     };
 
-    document.getElementById('alterar_convenio').disabled = true;
+    document.getElementById('alterar_registro').disabled = true;
 
     fetch('funcionario/alterar', {
         method: 'post',
@@ -147,7 +147,7 @@ function AtualizarRegistro() {
         });
 
 
-    document.getElementById('alterar_convenio').disabled = false;
+    document.getElementById('alterar_registro').disabled = false;
 }
 
 

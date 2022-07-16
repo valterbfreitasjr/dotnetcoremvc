@@ -61,7 +61,7 @@ namespace OficinaSystem.Front.Controllers
                 try
                 {
                     ConfigAPI api = new ConfigAPI();
-                    string url = api.UrlAPI + "funcionario/"+id;
+                    string url = api.UrlAPI + "funcionario/" + id;
                     var response = await client.GetStringAsync(url);
 
                     var result = JsonConvert.DeserializeObject<Funcionario>(response);
@@ -72,6 +72,25 @@ namespace OficinaSystem.Front.Controllers
                 {
                     return null;
                 }
+            }
+        }
+
+        [Route("alterar")]
+        [HttpPost]
+        public JsonResult Alterar([FromBody] Funcionario funcionario)
+        {
+
+            ConfigAPI api = new ConfigAPI();
+            string url = api.UrlAPI + "Funcionario/alterar";
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = client.PostAsync(url,
+                new StringContent(JsonConvert.SerializeObject(funcionario), Encoding.UTF8, "application/json")).Result;
+
+                string json = response.Content.ReadAsStringAsync().Result;
+                var result = JsonConvert.DeserializeObject<int>(json);
+
+                return Json(result);
             }
         }
 

@@ -50,10 +50,10 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, ClienteViewModel cliente)
+        [HttpPost]
+        public ActionResult Put(ClienteViewModel cliente)
         {
-            var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = id});
+            var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = cliente.Id });
 
             if (result)
                 return Ok();

@@ -52,10 +52,11 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, FuncionarioViewModel funcionario)
+        [HttpPost]
+        [Route("alterar")]
+        public ActionResult Put(FuncionarioViewModel funcionario)
         {
-            var result = _funcionarioRepositorie.EditarFuncionario(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco, Id = id});
+            var result = _funcionarioRepositorie.EditarFuncionario(new Funcionario{Nome = funcionario.Nome, Cpf = funcionario.Cpf, Endereco = funcionario.Endereco, Id = funcionario .Id });
 
             //Se 1(true) - 0(false)
             if (result)
