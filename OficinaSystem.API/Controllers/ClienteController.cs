@@ -17,7 +17,7 @@ namespace OficinaSystem.API.Controllers
             _clienteRepositorie = clienteRepositorie;
         }
 
-        [HttpPost]
+        [HttpPost("adicionar")]
         public ActionResult Post(ClienteViewModel cliente)
         {
             var result = _clienteRepositorie.Adicionar(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco});
@@ -50,10 +50,10 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, ClienteViewModel cliente)
+        [HttpPost("alterar")]
+        public ActionResult Put(ClienteViewModel cliente)
         {
-            var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = id});
+            var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = cliente.Id });
 
             if (result)
                 return Ok();

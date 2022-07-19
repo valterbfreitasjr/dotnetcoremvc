@@ -16,7 +16,7 @@ namespace OficinaSystem.API.Controllers
             _produtoRepositorie = produtoRepositorie;
         }
 
-        [HttpPost]
+        [HttpPost("adicionar")]
         public ActionResult Post(ProdutoViewModel produtoQuerie)
         {
             var result = _produtoRepositorie.Adiconar(new Produto{Descricao = produtoQuerie.Descricao, Preco = produtoQuerie.Preco});
@@ -49,10 +49,10 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, ProdutoViewModel produto)
+        [HttpPost("alterar")]
+        public ActionResult Put(ProdutoViewModel produto)
         {
-            var result = _produtoRepositorie.EditarProduto(new Produto{Descricao = produto.Descricao, Preco = produto.Preco, Id = id});
+            var result = _produtoRepositorie.EditarProduto(new Produto{Descricao = produto.Descricao, Preco = produto.Preco, Id = produto.Id });
 
             //Se 1(true) - 0(false)
             if (result)

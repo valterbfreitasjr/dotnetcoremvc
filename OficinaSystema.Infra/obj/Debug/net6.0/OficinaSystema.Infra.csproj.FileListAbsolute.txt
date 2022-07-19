@@ -13,18 +13,18 @@ D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\refint\OficinaSystema.Infra.dll
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.pdb
 D:\Users\valte\source\repos\OficinaSystem\OficinaSystema.Infra\obj\Debug\net6.0\ref\OficinaSystema.Infra.dll
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.deps.json
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.dll
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.pdb
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.dll
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.pdb
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.AssemblyReference.cache
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.GeneratedMSBuildEditorConfig.editorconfig
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfoInputs.cache
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfo.cs
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CoreCompileInputs.cache
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CopyComplete
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.dll
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\refint\OficinaSystema.Infra.dll
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.pdb
-D:\Repositorios c#\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\ref\OficinaSystema.Infra.dll
+E:\Repo\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.deps.json
+E:\Repo\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.dll
+E:\Repo\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystema.Infra.pdb
+E:\Repo\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.dll
+E:\Repo\sistemaoficina\OficinaSystema.Infra\bin\Debug\net6.0\OficinaSystem.Domain.pdb
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.AssemblyReference.cache
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfoInputs.cache
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.AssemblyInfo.cs
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CoreCompileInputs.cache
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.csproj.CopyComplete
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.dll
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\refint\OficinaSystema.Infra.dll
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\OficinaSystema.Infra.pdb
+E:\Repo\sistemaoficina\OficinaSystema.Infra\obj\Debug\net6.0\ref\OficinaSystema.Infra.dll
