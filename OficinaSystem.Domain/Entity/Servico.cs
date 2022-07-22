@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
 
-        public double Preco { get; set; }
+        public decimal Preco { get; set; }
 
         public string Descricao { get; set; }
 
@@ -13,7 +13,7 @@
 
         }
             
-        public Servico(int id, double preco, string descricao)
+        public Servico(int id, decimal preco, string descricao)
         {
             Id = id;
             Preco = preco;

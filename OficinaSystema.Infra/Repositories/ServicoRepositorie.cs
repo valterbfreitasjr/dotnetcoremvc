@@ -20,7 +20,7 @@ namespace OficinaSystema.Infra.Repositories
             {
                 string sql = "INSERT INTO Servico(Preco, Descricao) VALUES(@Preco,@Descricao);SELECT @@IDENTITY;";
                 _command.CommandText = sql;
-                _command.Parameters.Add("@Preco", SqlDbType.Float).Value = servico.Preco;
+                _command.Parameters.Add("@Preco", SqlDbType.Decimal).Value = servico.Preco;
                 _command.Parameters.Add("@Descricao", SqlDbType.VarChar).Value = servico.Descricao;
                 int id = 0;
                 if (int.TryParse(_command.ExecuteScalar().ToString(), out id))
@@ -44,7 +44,7 @@ namespace OficinaSystema.Infra.Repositories
                     {
                         while (reader.Read())
                         {
-                            var servico = new Servico(reader.GetInt32(0), reader.GetDouble(1), reader.GetString(2));
+                            var servico = new Servico(reader.GetInt32(0), reader.GetDecimal(1), reader.GetString(2));
                             lista.Add(servico);
                             //yield return new Produto(reader.GetInt32(0), reader.GetDouble(1), reader.GetString(2));
                         }
@@ -65,7 +65,7 @@ namespace OficinaSystema.Infra.Repositories
                     if (reader.HasRows)
                     {
                         reader.Read();
-                        var servico = new Servico(reader.GetInt32(0), reader.GetDouble(1), reader.GetString(2));
+                        var servico = new Servico(reader.GetInt32(0), reader.GetDecimal(1), reader.GetString(2));
                         return servico;
                     }
                 }

@@ -24,3 +24,29 @@ E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.
 E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\ref\OficinaSystem.Front.dll
 E:\Repo\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\Newtonsoft.Json.dll
 E:\Repo\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.csproj.CopyComplete
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.staticwebassets.runtime.json
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.exe
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.deps.json
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.runtimeconfig.json
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.dll
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\OficinaSystem.Front.pdb
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.csproj.AssemblyReference.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.AssemblyInfoInputs.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.AssemblyInfo.cs
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.csproj.CoreCompileInputs.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.MvcApplicationPartsAssemblyInfo.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.RazorAssemblyInfo.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.RazorAssemblyInfo.cs
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\staticwebassets.build.json
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\staticwebassets.development.json
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\bundle\OficinaSystem.Front.styles.css
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\scopedcss\projectbundle\OficinaSystem.Front.bundle.scp.css
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.csproj.CopyComplete
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.dll
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\refint\OficinaSystem.Front.dll
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.pdb
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\OficinaSystem.Front.genruntimeconfig.cache
+D:\Repositorios c#\sistemaoficina\OficinaSystem.Front\obj\Debug\net6.0\ref\OficinaSystem.Front.dll

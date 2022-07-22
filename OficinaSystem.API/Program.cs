@@ -1,4 +1,6 @@
 using OficinaSystem.Domain.Interfaces;
+using OficinaSystem.Domain.Services;
+using OficinaSystem.Domain.Services.Interfaces;
 using OficinaSystema.Infra;
 using OficinaSystema.Infra.Repositories;
 using System.Data.SqlClient;
@@ -23,7 +25,8 @@ builder.Services.AddScoped(typeof(IProdutoRepositorie), typeof(ProdutoRepositori
 builder.Services.AddScoped(typeof(IFuncionarioRepositorie), typeof(FuncionarioRepositorie));
 builder.Services.AddScoped(typeof(IClienteRepositorie), typeof(ClienteRepositorie));
 builder.Services.AddScoped(typeof(IServicoRepositorie), typeof(ServicoRepositorie));
-//builder.Services.AddScoped(typeof(IPedidoRepositorie), typeof(PedidoRepositorie));
+builder.Services.AddScoped(typeof(IPedidoRepositorie), typeof(PedidoRepositorie));
+builder.Services.AddScoped(typeof(IPedidoService), typeof(PedidoService));
 
 var app = builder.Build();
 

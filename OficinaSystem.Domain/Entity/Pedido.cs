@@ -14,6 +14,6 @@
 
         public List<Servico>? Servicos { get; set; }
 
-        public double ValorTotal { get; set; }
+        public decimal ValorTotal { get; set; }
     }
 }
