@@ -15,5 +15,11 @@
         public List<Servico>? Servicos { get; set; }
 
         public decimal ValorTotal { get; set; }
+
+        public void SetarPedido(decimal valorTotal)
+        {
+            DataPedido = DateTime.Now;
+            ValorTotal = valorTotal;
+        }
     }
 }

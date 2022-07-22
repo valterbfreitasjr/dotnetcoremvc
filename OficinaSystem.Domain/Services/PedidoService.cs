@@ -13,23 +13,15 @@ namespace OficinaSystem.Domain.Services
             _pedidoRepositorie = pedidoRepositorie;
         }
 
-        public void AdicionarPedidos(Pedido pedido)
+        public int AdicionarPedidos(Pedido pedido)
         {
             var valorTotal = pedido.Produtos.Any() ? pedido.Produtos.Sum(s => s.Preco) : 0;
             valorTotal += pedido.Servicos.Any() ? pedido.Servicos.Sum(s => s.Preco) : 0;
 
-            pedido.ValorTotal = valorTotal;
- 
-            var resultPedido = _pedidoRepositorie.Adicionar(pedido);
+            pedido.SetarPedido(valorTotal);
+            var resultPedido = _pedidoRepositorie.AdicionarPedido(pedido);
 
-            if(resultPedido > 0) 
-            {
-                if(pedido.Produtos.Any())
-                    _pedidoRepositorie.AdicionarPedidoProduto(pedido.Produtos, resultPedido);
-
-                if(pedido.Servicos.Any())
-                    _pedidoRepositorie.AdicionarPedidoServico(pedido.Servicos, resultPedido);
-            }
+            return resultPedido;
         }
 
     }

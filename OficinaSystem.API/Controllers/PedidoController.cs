@@ -20,7 +20,10 @@ namespace OficinaSystem.API.Controllers
         [HttpPost("adicionar")]
         public ActionResult Post(Pedido pedidoQuerie)
         {
-            _pedidoService.AdicionarPedidos(pedidoQuerie);
+            var result = _pedidoService.AdicionarPedidos(pedidoQuerie);
+
+            if (result != 1)
+                return BadRequest();
 
             return Ok();
         }

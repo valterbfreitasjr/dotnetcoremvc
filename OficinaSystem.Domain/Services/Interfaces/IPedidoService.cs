@@ -4,6 +4,6 @@ namespace OficinaSystem.Domain.Services.Interfaces
 {
     public interface IPedidoService
     {
-        void AdicionarPedidos(Pedido pedido);
+        int AdicionarPedidos(Pedido pedido);
     }
 }
