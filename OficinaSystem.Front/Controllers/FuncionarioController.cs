@@ -11,7 +11,7 @@ namespace OficinaSystem.Front.Controllers
     {
         [Route("obtertodos")]
         [HttpGet]
-        public async Task<IEnumerable<Funcionario>> ObterTodos()
+        public async Task<IEnumerable<FuncionarioModel>> ObterTodos()
         {
 
             using (HttpClient client = new HttpClient())
@@ -21,7 +21,7 @@ namespace OficinaSystem.Front.Controllers
                     ConfigAPI api = new ConfigAPI();
                     string url = api.UrlAPI + "Funcionario/obtertodos";
                     var response = await client.GetStringAsync(url);
-                    var convenios = JsonConvert.DeserializeObject<IEnumerable<Funcionario>>(response);
+                    var convenios = JsonConvert.DeserializeObject<IEnumerable<FuncionarioModel>>(response);
                     return convenios;
                 }
                 catch (Exception ex)
@@ -35,7 +35,7 @@ namespace OficinaSystem.Front.Controllers
 
         [Route("adicionar")]
         [HttpPost]
-        public JsonResult Adicionar([FromBody] Funcionario funcionario)
+        public JsonResult Adicionar([FromBody] FuncionarioModel funcionario)
         {
             ConfigAPI api = new ConfigAPI();
             string url = api.UrlAPI + "Funcionario/adicionar";
@@ -45,7 +45,7 @@ namespace OficinaSystem.Front.Controllers
                 new StringContent(JsonConvert.SerializeObject(funcionario), Encoding.UTF8, "application/json")).Result;
 
                 string json = response.Content.ReadAsStringAsync().Result;
-                var result = JsonConvert.DeserializeObject<Funcionario>(json);
+                var result = JsonConvert.DeserializeObject<FuncionarioModel>(json);
 
                 return Json(result);
             }
@@ -64,7 +64,7 @@ namespace OficinaSystem.Front.Controllers
                     string url = api.UrlAPI + "funcionario/" + id;
                     var response = await client.GetStringAsync(url);
 
-                    var result = JsonConvert.DeserializeObject<Funcionario>(response);
+                    var result = JsonConvert.DeserializeObject<FuncionarioModel>(response);
 
                     return Json(result);
                 }
@@ -77,7 +77,7 @@ namespace OficinaSystem.Front.Controllers
 
         [Route("alterar")]
         [HttpPost]
-        public JsonResult Alterar([FromBody] Funcionario funcionario)
+        public JsonResult Alterar([FromBody] FuncionarioModel funcionario)
         {
 
             ConfigAPI api = new ConfigAPI();

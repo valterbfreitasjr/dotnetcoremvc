@@ -1,6 +1,6 @@
 ﻿namespace OficinaSystem.Front.Models
 {
-    public class Funcionario
+    public class FuncionarioModel
     {
         public int Id { get; set; }
 
@@ -10,12 +10,12 @@
 
         public string Endereco { get; set; }
 
-        public Funcionario()
+        public FuncionarioModel()
         {
 
         }
 
-        public Funcionario(int id, string nome, string cpf, string endereco)
+        public FuncionarioModel(int id, string nome, string cpf, string endereco)
         {
             Id = id;
             Nome = nome;

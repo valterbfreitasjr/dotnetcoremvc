@@ -27,7 +27,7 @@ namespace OficinaSystem.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet]
+        [HttpGet("obtertodos")]
         public ActionResult Get()
         {
             var result = _produtoRepositorie.ObterTodos();
