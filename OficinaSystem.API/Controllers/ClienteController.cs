@@ -28,7 +28,7 @@ namespace OficinaSystem.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet]
+        [HttpGet("obtertodos")]
         public ActionResult Get()
         {
             var result = _clienteRepositorie.ObterTodos();
@@ -56,20 +56,20 @@ namespace OficinaSystem.API.Controllers
             var result = _clienteRepositorie.EditarCliente(new Cliente{Nome = cliente.Nome, Cpf = cliente.Cpf, Endereco = cliente.Endereco, Id = cliente.Id });
 
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        [HttpPost("deletar")]
+        public ActionResult Delete([FromBody] int id)
         {
             var result = _clienteRepositorie.Delete(id);
 
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
     }
 }

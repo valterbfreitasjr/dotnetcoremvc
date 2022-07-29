@@ -14,15 +14,32 @@ document.getElementById("alterar_registro").addEventListener("click", function (
     AtualizarRegistro();
 });
 
+async function Alterar(codigo) {
+
+    const response = await fetch('cliente/obterporid/' + codigo);
+    const data = await response.json();
+    document.getElementById('txtId').value = data.id;
+    document.getElementById('txtNomeAlt').value = data.nome;
+    document.getElementById('txtCpfAlt').value = data.cpf;
+    document.getElementById('txtEnderecoAlt').value = data.endereco;
+
+    jQuery('#modalAlterarRegistro').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+
+}
+
 async function carregarDadosTabela() {
-    const response = await fetch('produto/obtertodos');
+    const response = await fetch('cliente/obtertodos');
     const data = await response.json();
     let tr = '';
     data.map(dado => {
         tr += `<tr>
                <td>${dado.id}</td>
-               <td>${dado.descricao}</td> 
-               <td>${dado.preco}</td> 
+               <td>${dado.nome}</td> 
+               <td>${dado.cpf}</td>
+               <td>${dado.endereco}</td> 
                <td>
                     <button class="btn btn-icon btn-primary" id="btnAlterar${dado.id}" onclick="Alterar(${dado.id})"><i class="fa fa-edit"></i></button>
                     <button class="btn btn-icon btn-danger" id="btnRemover${dado.id}" onclick="Remover(${dado.id})"><i class="fa fa-trash"></i></button>
@@ -30,10 +47,30 @@ async function carregarDadosTabela() {
                </tr>`;
 
     });
-    jQuery('#ProdutoCadastrado > tbody').html(tr);
-    let nomeTabela = 'ProdutoCadastrado';
+    jQuery('#ClienteCadastrado > tbody').html(tr);
+    let nomeTabela = 'ClienteCadastrado';
     dataTable(nomeTabela);
     fecharLoader();
+}
+
+function AtualizaTable() {
+
+    document.getElementById('destroy').innerHTML = "";
+    document.getElementById('destroy').innerHTML = `
+                    <table class="table table-striped" id="FuncionarioCadastrado">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Cpf</th>
+                                <th scope="col">Endereço</th>
+                                <th scope="col">Opções</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>    `;
+
+    carregarDadosTabela();
 }
 
 function ModalNovoRegistro() {
@@ -46,17 +83,19 @@ function ModalNovoRegistro() {
 
 function NovoRegistro() {
 
-    let descricao = document.getElementById('txtDescricao').value;
-    let preco = document.getElementById('txtPreco').value;
+    let nome = document.getElementById('txtNome').value;
+    let cpf = document.getElementById('txtCpf').value;
+    let endereco = document.getElementById('txtEndereco').value;
 
     const dto = {
-        Descricao: descricao,
-        Preco: preco,
+        Nome: nome,
+        Cpf: cpf,
+        Endereco: endereco
     };
 
     document.getElementById('salvar_registro').disabled = true;
 
-    fetch('produto/adicionar', {
+    fetch('cliente/adicionar', {
         method: 'post',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -78,39 +117,22 @@ function NovoRegistro() {
     document.getElementById('salvar_registro').disabled = false;
 }
 
-function AtualizaTable() {
-
-    document.getElementById('destroy').innerHTML = "";
-    document.getElementById('destroy').innerHTML = `
-                    <table class="table table-striped" id="ProdutoCadastrado">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Descrição</th>
-                                <th scope="col">Preço</th>
-                                <th scope="col">Opções</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>    `;
-
-    carregarDadosTabela();
-}
-
 function AtualizarRegistro() {
     let id = document.getElementById('txtId').value;
-    let descricao = document.getElementById('txtDescricaoAlt').value;
-    let preco = document.getElementById('txtPrecoAlt').value;
+    let nome = document.getElementById('txtNomeAlt').value;
+    let cpf = document.getElementById('txtCpfAlt').value;
+    let endereco = document.getElementById('txtEnderecoAlt').value;
 
     const dto = {
         Id: id,
-        Descricao: descricao,
-        Preco: preco,
+        Nome: nome,
+        Cpf: cpf,
+        Endereco: endereco
     };
 
     document.getElementById('alterar_registro').disabled = true;
 
-    fetch('produto/alterar', {
+    fetch('cliente/alterar', {
         method: 'post',
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -134,21 +156,6 @@ function AtualizarRegistro() {
     document.getElementById('alterar_registro').disabled = false;
 }
 
-async function Alterar(codigo) {
-
-    const response = await fetch('produto/obterporid/' + codigo);
-    const data = await response.json();
-    document.getElementById('txtId').value = data.id;
-    document.getElementById('txtDescricaoAlt').value = data.descricao;
-    document.getElementById('txtPrecoAlt').value = data.preco;
-
-    jQuery('#modalAlterarRegistro').modal({
-        backdrop: 'static',
-        keyboard: false
-    });
-
-}
-
 function Remover(id) {
 
     jQuery('#modalConfirmarExclusao').modal({
@@ -157,7 +164,7 @@ function Remover(id) {
     }).one('click', '#delete_registro', function (e) {
 
 
-        fetch('produto/remover', {
+        fetch('cliente/remover', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',
@@ -183,7 +190,4 @@ function Remover(id) {
             });
 
     });
-
 }
-
-

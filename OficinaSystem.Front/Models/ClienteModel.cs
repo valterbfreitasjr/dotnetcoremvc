@@ -1,6 +1,6 @@
-﻿namespace OficinaSystem.API.ViewModel
+﻿namespace OficinaSystem.Front.Models
 {
-    public class ClienteViewModel
+    public class ClienteModel
     {
         public int Id { get; set; }
 
@@ -8,6 +8,6 @@
 
         public string Cpf { get; set; }
 
-        public string Endereco { get;  set; }
+        public string Endereco { get; set; }
     }
 }

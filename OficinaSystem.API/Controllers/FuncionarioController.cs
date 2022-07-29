@@ -59,10 +59,10 @@ namespace OficinaSystem.API.Controllers
             if (result)
                 return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
 
-        [HttpPost("delete")]
+        [HttpPost("deletar")]
         public ActionResult Delete([FromBody] int id)
         {
             var result = _funcionarioRepositorie.Delete(id);
@@ -70,7 +70,7 @@ namespace OficinaSystem.API.Controllers
             if (result)
                 return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
     }
 }

@@ -56,20 +56,20 @@ namespace OficinaSystem.API.Controllers
 
             //Se 1(true) - 0(false)
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        [HttpPost("deletar")]
+        public ActionResult Delete([FromBody]int id)
         {
             var result = _produtoRepositorie.Delete(id);
 
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
     }
 }

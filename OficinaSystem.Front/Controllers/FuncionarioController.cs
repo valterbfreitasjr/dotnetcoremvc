@@ -93,12 +93,13 @@ namespace OficinaSystem.Front.Controllers
                 return Json(result);
             }
         }
+
         [Route("remover")]
         [HttpPost]
         public async Task<JsonResult> Remover([FromBody] int codigo)
         {
             ConfigAPI api = new ConfigAPI();
-            string url = api.UrlAPI + "Funcionario/delete";
+            string url = api.UrlAPI + "Funcionario/deletar";
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = client.PostAsync(url,
