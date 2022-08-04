@@ -27,7 +27,7 @@ namespace OficinaSystem.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet]
+        [HttpGet("obtertodos")]
         public ActionResult Get()
         {
             var result = _servicoRepositorie.ObterTodos();
@@ -49,27 +49,27 @@ namespace OficinaSystem.API.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, ServicoViewModel servico)
+        [HttpPost("alterar")]
+        public ActionResult Put(ServicoViewModel servico)
         {
-            var result = _servicoRepositorie.EditarServico(new Servico { Preco = servico.Preco, Descricao = servico.Descricao, Id = id});
+            var result = _servicoRepositorie.EditarServico(new Servico { Preco = servico.Preco, Descricao = servico.Descricao, Id = servico.Id});
 
             //Se 1(true) - 0(false)
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
 
-        [HttpDelete("{id}")]
+        [HttpPost("deletar")]
         public ActionResult Delete(int id)
         {
             var result = _servicoRepositorie.Delete(id);
 
             if (result)
-                return Ok();
+                return Ok(1);
 
-            return BadRequest();
+            return BadRequest(0);
         }
     }
 
