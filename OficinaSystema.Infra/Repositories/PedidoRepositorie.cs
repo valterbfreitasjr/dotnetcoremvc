@@ -75,6 +75,34 @@ namespace OficinaSystema.Infra.Repositories
 
             return 0;
         }
+
+        public List<Pedido> ObterTodos()
+        {
+            List<Pedido> lista = new();
+            using (SqlCommand _command = _connection.CreateCommand())
+            {
+                _command.CommandText = @"SELECT Pd.Id, Pd.DataPedido, Pd.ValorTotal, Cl.Id, Cl.Nome, Fn.Id, Fn.Nome
+                                         FROM Pedido Pd
+                                         INNER JOIN Cliente Cl ON Pd.ClienteId = Cl.Id
+                                         INNER JOIN Funcionario Fn ON Pd.FuncionarioId = Fn.Id
+                                         ORDER BY Pd.Id";
+                using (SqlDataReader reader = _command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            var cliente = new Cliente(reader.GetInt32(3), reader.GetString(4));
+                            var funcionario = new Funcionario(reader.GetInt32(5), reader.GetString(6));
+                            var pedido = new Pedido(reader.GetInt32(0), reader.GetDateTime(1), reader.GetDecimal(2), cliente, funcionario);
+                            lista.Add(pedido);
+                            //yield return new Produto(reader.GetInt32(0), reader.GetDouble(1), reader.GetString(2));
+                        }
+                    }
+                }
+            }
+            return lista;
+        }
     }
 
 

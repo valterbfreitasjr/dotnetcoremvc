@@ -15,6 +15,12 @@
 
         }
 
+        public Funcionario(int id, string nome)
+        {
+            Id = id;
+            Nome = nome;
+        }
+
         public Funcionario(int id, string nome, string cpf, string endereco)
         {
             Id = id;

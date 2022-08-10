@@ -57,7 +57,7 @@ function AtualizaTable() {
 
     document.getElementById('destroy').innerHTML = "";
     document.getElementById('destroy').innerHTML = `
-                    <table class="table table-striped" id="FuncionarioCadastrado">
+                    <table class="table table-striped" id="ClienteCadastrado">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>

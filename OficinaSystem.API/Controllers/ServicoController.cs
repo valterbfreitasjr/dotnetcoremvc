@@ -62,7 +62,7 @@ namespace OficinaSystem.API.Controllers
         }
 
         [HttpPost("deletar")]
-        public ActionResult Delete(int id)
+        public ActionResult Delete([FromBody]int id)
         {
             var result = _servicoRepositorie.Delete(id);
 

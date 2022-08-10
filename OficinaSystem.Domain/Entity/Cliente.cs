@@ -15,6 +15,12 @@
 
         }
 
+        public Cliente(int id, string nome)
+        {
+            Id = id;
+            Nome = nome;
+        }
+
         public Cliente(int id, string nome, string cpf, string endereco)
         {
             Id = id;

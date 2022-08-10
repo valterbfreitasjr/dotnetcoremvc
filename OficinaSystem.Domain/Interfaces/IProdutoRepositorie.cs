@@ -9,5 +9,6 @@ namespace OficinaSystem.Domain.Interfaces
         Produto ObterProduto(int id);
         bool EditarProduto(Produto produto);
         bool Delete(int id);
+        List<Produto> ObterProdutoPedido(int id);
     }
 }

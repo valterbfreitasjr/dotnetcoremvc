@@ -98,5 +98,32 @@ namespace OficinaSystema.Infra.Repositories
             }
             return ret;
         }
+
+        public List<Produto> ObterProdutoPedido(int id)
+        {
+            List<Produto> lista = new();
+            using (SqlCommand _command = _connection.CreateCommand())
+            {
+                _command.CommandText = @"SELECT pp.ProdutoId, pd.Preco, pd.Descricao FROM Produto pd
+                                        INNER JOIN Pedido_X_Produto pp ON pp.ProdutoId = pd.Id
+                                        WHERE pp.PedidoId = @Id
+                                        ORDER BY pd.Descricao";
+                _command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                using (SqlDataReader reader = _command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            var produto = new Produto(reader.GetInt32(0), reader.GetDecimal(1), reader.GetString(2));
+                            lista.Add(produto);
+                            //yield return new Produto(reader.GetInt32(0), reader.GetDouble(1), reader.GetString(2));
+                        }
+                    }
+                }
+            }
+            return lista;
+        }
     }
+
 }

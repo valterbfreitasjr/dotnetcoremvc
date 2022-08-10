@@ -71,5 +71,18 @@ namespace OficinaSystem.API.Controllers
 
             return BadRequest(0);
         }
+
+        
+        [HttpGet("obterprodutospedido/{id}")]
+        public ActionResult GetProdutoPedido(int id)
+        {
+            var result = _produtoRepositorie.ObterProdutoPedido(id);
+
+            if (result != null)
+                return Ok(result);
+
+            return NotFound();
+        }
+
     }
 }

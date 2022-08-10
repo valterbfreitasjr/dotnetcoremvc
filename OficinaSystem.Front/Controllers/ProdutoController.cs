@@ -112,6 +112,30 @@ namespace OficinaSystem.Front.Controllers
 
         }
 
+        [Route("obterprodutospedido/{id}")]
+        [HttpGet]
+        public async Task<JsonResult> GetProdutoPedido(int id)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    ConfigAPI api = new ConfigAPI();
+                    string url = api.UrlAPI + "produto/obterprodutospedido/" + id;
+                    var response = await client.GetStringAsync(url);
+
+                    var result = JsonConvert.DeserializeObject<List<ProdutoModel>>(response);
+
+                    return Json(result);
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+
         public IActionResult Index()
         {
             return View();

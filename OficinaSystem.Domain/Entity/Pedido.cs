@@ -21,5 +21,14 @@
             DataPedido = DateTime.Now;
             ValorTotal = valorTotal;
         }
+
+        public Pedido(int id, DateTime dataPedido, decimal valorTotal, Cliente cliente, Funcionario funcionario)
+        {
+            Id = id;
+            Cliente = cliente;
+            Funcionario = funcionario;
+            DataPedido = dataPedido;
+            ValorTotal = valorTotal;
+        }
     }
 }
