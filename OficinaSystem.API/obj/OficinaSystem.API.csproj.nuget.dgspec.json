@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
         "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -84,6 +87,9 @@
         "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
         "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -144,6 +150,9 @@
         "packagesPath": "C:\\Users\\valte\\.nuget\\packages\\",
         "outputPath": "D:\\Repositorios c#\\sistemaoficina\\OficinaSystema.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\valte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

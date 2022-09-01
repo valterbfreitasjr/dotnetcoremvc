@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using OficinaSystem.API.ViewModel;
 using OficinaSystem.Domain.Entity;
 using OficinaSystem.Domain.Interfaces;
