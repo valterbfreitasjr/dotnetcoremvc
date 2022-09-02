@@ -208,3 +208,4 @@ D:\Repositorios c#\sistemaoficina\OficinaSystem.API\bin\Debug\net6.0\Azure.Core.
 D:\Repositorios c#\sistemaoficina\OficinaSystem.API\bin\Debug\net6.0\Azure.Identity.dll
 D:\Repositorios c#\sistemaoficina\OficinaSystem.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Repositorios c#\sistemaoficina\OficinaSystem.API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Repositorios c#\sistemaoficina\OficinaSystem.API\obj\Debug\net6.0\OficinaSystem.API.MvcApplicationPartsAssemblyInfo.cs

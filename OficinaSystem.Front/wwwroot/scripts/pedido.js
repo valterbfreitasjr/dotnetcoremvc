@@ -93,6 +93,50 @@ function AtualizaTableProdutos() {
                     </table>    `;
 }
 
+function ExibirServicos(id) {
+
+    AtualizaTableServicos();
+    carregarDadosServico(id);
+    jQuery('#modalServicos').modal({
+        backdrop: 'static',
+        keyboard: false
+    })
+}
+
+async function carregarDadosServico(id) {
+    const response = await fetch('servico/obterservicospedido/' + id);
+    const data = await response.json();
+    let tr = '';
+    data.map(dado => {
+        tr += `<tr>
+               <td>${dado.id}</td>
+               <td>${dado.descricao}</td> 
+               <td>${Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(dado.preco)}</td>
+               </tr>`;
+
+    });
+    jQuery('#TabelaExibirServicos > tbody').html(tr);
+    let nomeTabela = 'TabelaExibirServicos';
+    dataTable(nomeTabela);
+    fecharLoader();
+}
+
+function AtualizaTableServicos() {
+
+    document.getElementById('destroyServicos').innerHTML = "";
+    document.getElementById('destroyServicos').innerHTML = `
+                    <table class="table table-striped" id="TabelaExibirServicos">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>    `;
+}
+
 function AtualizaTable() {
 
     document.getElementById('destroy').innerHTML = "";

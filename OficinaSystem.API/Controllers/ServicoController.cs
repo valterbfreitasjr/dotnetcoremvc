@@ -71,6 +71,17 @@ namespace OficinaSystem.API.Controllers
 
             return BadRequest(0);
         }
+
+        [HttpGet("obterservicospedido/{id}")]
+        public ActionResult GetServicoPedido(int id)
+        {
+            var result = _servicoRepositorie.ObterServicoPedido(id);
+
+            if (result != null)
+                return Ok(result);
+
+            return NotFound();
+        }
     }
 
 

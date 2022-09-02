@@ -112,6 +112,29 @@ namespace OficinaSystem.Front.Controllers
 
         }
 
+        [Route("obterservicospedido/{id}")]
+        [HttpGet]
+        public async Task<JsonResult> GetServicoPedido(int id)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    ConfigAPI api = new ConfigAPI();
+                    string url = api.UrlAPI + "servico/obterservicospedido/" + id;
+                    var response = await client.GetStringAsync(url);
+
+                    var result = JsonConvert.DeserializeObject<List<ServicoModel>>(response);
+
+                    return Json(result);
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
         public IActionResult Index()
         {
             return View();
