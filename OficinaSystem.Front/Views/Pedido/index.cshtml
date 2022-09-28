@@ -102,6 +102,8 @@
 
 
 
+
+
 	<main class="main-content position-relative max-height-vh-150 h-150 border-radius-lg ">
 		<div class="container-fluid py-6">
 			<div class="card mb-2">
@@ -146,6 +148,16 @@
 		</div>
 	</main>
 
+
+
+
+
+
+
+
+
+
+
 	<div class=" modal fade modal_confirm" id="modalNovoRegistro">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -154,10 +166,42 @@
 				</div>
 				<div class="modal-body">
 					<div class="card-body">
+						<div class="row col-md-4">
+							<div class="ms-md-auto pe-md-3 d-flex align-items-center">
+								<div class="input-group input-group-outline">
+									<label class="form-label">Cliente</label>
+									<input type="text" class="form-control" id="txtCliente" name="txtCliente" data-cliente="" data-codigocliente="0" />
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+						<br />
 						<div class="row col-md-6">
 							<div class="ms-md-auto pe-md-3 d-flex align-items-center">
 								<div class="input-group input-group-outline">
-									<label class="form-label">Descrição</label>
+									<label class="form-label">Funcionário</label>
+									<select class="form-control" name="selFuncionario" id="selFuncionario"></select>
+								</div>
+							</div>
+						</div>
+						<br />
+
+
+
+
+
+
+
+						<div class="row col-md-6">
+							<div class="ms-md-auto pe-md-3 d-flex align-items-center">
+								<div class="input-group input-group-outline">
+									<label class="form-label">Produto</label>
 									<input type="text" class="form-control" id="txtDescricao" maxlength="100">
 								</div>
 							</div>
@@ -165,12 +209,31 @@
 						<br />
 						<div class="row col-md-4">
 							<div class="ms-md-auto pe-md-3 d-flex align-items-center">
+								<label class="control-label"</label>
 								<div class="input-group input-group-outline">
-									<label class="form-label">Preço</label>
-									<input type="number" class="form-control" id="txtPreco" maxlength="11">
+									<select class="form-control single-select" id="selServicos" name="selServicos">
+										<option value="" default selected>Selecione o Serviço</option>
+										<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+									</select>
 								</div>
 							</div>
 						</div>
+
+
+
+
+
+
+
+
+
+
+
 
 					</div>
 				</div>
@@ -204,8 +267,8 @@
 										<thead>
 											<tr>
 												<th scope="col">#</th>
-                                                <th scope="col">Descrição</th>
-                                                <th scope="col">Preço</th>
+												<th scope="col">Descrição</th>
+												<th scope="col">Preço</th>
 											</tr>
 										</thead>
 										<tbody></tbody>
@@ -235,8 +298,8 @@
 										<thead>
 											<tr>
 												<th scope="col">#</th>
-                                                <th scope="col">Descrição</th>
-                                                <th scope="col">Preço</th>
+												<th scope="col">Descrição</th>
+												<th scope="col">Preço</th>
 											</tr>
 										</thead>
 										<tbody></tbody>
@@ -353,5 +416,5 @@
 </html>
 
 @section Scripts {
-			<script src="~/scripts/pedido.js"></script>
+																																		<script src="~/scripts/pedido.js"></script>
 }

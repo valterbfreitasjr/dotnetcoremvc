@@ -156,3 +156,10 @@ function AtualizaTable() {
     carregarDadosTabela();
 }
 
+function ModalNovoRegistro() {
+
+    jQuery('#modalNovoRegistro').modal({
+        backdrop: 'static',
+        keyboard: false
+    })
+}
