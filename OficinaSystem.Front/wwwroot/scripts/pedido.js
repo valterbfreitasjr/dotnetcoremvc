@@ -56,7 +56,7 @@ function ExibirProdutos(id) {
     jQuery('#modalProdutos').modal({
         backdrop: 'static',
         keyboard: false
-    }) 
+    })
 }
 
 async function carregarDadosProduto(id) {
